@@ -1,0 +1,12 @@
+<!--pages/community/community.wxml-->
+
+  <!-- <view>
+    <block wx:for="{{proList}}" wx:key="{{index}}" bindtap="bindd">
+      <navigator url='/pages/detail/detail?goodsID={{index}}'>
+      <view>
+        <button bindtap="getMessage">测试</button>
+        <image src='{{item}}'></image>
+      </view>
+      </navigator>
+    </block>
+  </view>  -->

@@ -1,39 +1,20 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>
+  <SearchInput></SearchInput>
+ <!-- 轮播图  -->
+<view class="index_swiper">
+    <swiper autoplay indicator-dots circular>
+      <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+        <navigator>
+          <image mode="widthFix" src="{{item.image_src}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+</view>
+  <!-- 精品推荐 -->
+<!-- <view class="index_fo">
+  <view class="index_foryou">精品推荐</view>
+  <view class="index_for">查看全部</view>
   
-
-
- 
-    <view>
-        <text>姓名：</text>
-        <input name="name" value="{{name}}"></input>
-    </view>
-    <view>
-        <text> 性别：</text>
-        <radio-group name="gender">
-            <label wx:for='{{gender}}' wx:key="value">
-                <radio value='{{item.value}}' checked='{{item.checked}}'></radio>
-                {{item.name}}
-            </label>
-        </radio-group>
-    </view>
-    <view>
-        <text >您的意见：</text>
-        <!-- <textarea name="option" value=‘{{option}}’></textarea> -->
-    </view>
-    <button form-type='submit'>提交</button>
-
-
-
+</view> -->
 
 </view>

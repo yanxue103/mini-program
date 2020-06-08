@@ -1,13 +1,54 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/login/login",
+    "pages/community/community",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/category/category",
+    "pages/books_list/books_list",
+    "pages/books_detail/books_detail",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/auth/auth",
+    "components/SearchInput/SearchInput",
+    "request/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#ffcc33",
+    "navigationBarTitleText": "SharedLibrary",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/index.png",
+        "selectedIconPath": "icon/index_.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "共享",
+        "iconPath": "icon/sort.png",
+        "selectedIconPath": "icon/sort_.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "icon/community.png",
+        "selectedIconPath": "icon/community_.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/mine.png",
+        "selectedIconPath": "icon/mine_.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

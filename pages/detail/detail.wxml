@@ -1,0 +1,7 @@
+<!--pages/detail/detail.wxml-->
+<text>产品名称：{{showtitle}}</text>
+<view>产品描述：{{showdesc}}</view>
+<view>产品图片：{{showimg}}</view>
+<view>
+  <image src='{{showimg}}'></image>
+</view>

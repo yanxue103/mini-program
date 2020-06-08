@@ -1,0 +1,9 @@
+/* pages/community/community.wxss */
+.container { 
+ height: 100%; 
+ display: flex; 
+ flex-direction: column; 
+ padding: 0; 
+ box-sizing: border-box; 
+ background-color: #F2F2F2
+} 

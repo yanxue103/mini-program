@@ -1,0 +1,5 @@
+<!--pages/mine/index.wxml-->
+<view>
+  <button bindtap="bindViewTap" class="minelogin">login</button>
+</view>
+
